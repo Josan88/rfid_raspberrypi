@@ -64,7 +64,7 @@ def main():
     # ======================================================================================
 
     SendData1 = byte_Sarr300()
-    SendData1[0] = 0xFF 
+    SendData1[0] = 0xFF
     SendData1[1] = 0x06
     SendData1[2] = 0x03
     SendData1[3] = 0x00
@@ -153,9 +153,7 @@ def main():
 
                 # Create a dictionary of the scanned tag data
                 tag_data = {"timestamp": timestamp, "tag_data": hexstr}
-
                 print(tag_data)
-                time.sleep(5)
 
                 # Append the dictionary to the SCANNED_TAGS list or update the timestamp if the same tag has been scanned before
                 if tag_data not in SCANNED_TAGS:
