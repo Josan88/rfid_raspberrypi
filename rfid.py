@@ -18,7 +18,7 @@ def python_print_hex(di, Length):
     tt = 0
     for i in di:
         s = "{:02X}".format(int(i & 0xFF))
-        hexstr = hexstr + s + " "
+        hexstr = hexstr + s
 
         tt = tt + 1
         if tt == Length:
